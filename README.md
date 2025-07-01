@@ -10,8 +10,8 @@ This system offers key functionalities like:
 * New Customer registration
 * Existing Customer Login
 * Money Withdraw & Deposit
-* add transaction details to finance diary
-* admin portal
+* Add transaction details to finance diary
+* Admin portal
 
 <br>
 For saving the employee and customer details, I have used json, instead of sql.
