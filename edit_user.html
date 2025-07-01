@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit User</title></head>
+ <link rel="stylesheet" href="{{ url_for('static', filename='styles/edit_user.css') }}">
+<body>
+    <h2>Edit User: {{ acc_num }}</h2>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for msg in messages %}
+          <p style="color:green;">{{ msg }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" value="{{ user['name'] }}" required><br><br>
+        <input type="submit" value="Update">
+    </form>
+    <br>
+    <a href="{{ url_for('admin_login') }}">Back to Admin Panel</a>
+</body>
+</html>

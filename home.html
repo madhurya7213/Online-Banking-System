@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style1.css') }}">
+    <title>Member Zone - SecureTrust Bank</title>
+</head>
+<body align="center">
+    <!-- Bank Name Header -->
+    <h1 style="margin-top: 30px; font-size: 36px; color: #2c3e50;"></h1>
+
+    <div class="login-box">
+        <h2>BLUE-CREST BANK🌊</h2>
+
+        <form action="new-user">
+            <input type="submit" class="btn" value="Register">
+        </form>
+
+        <form action="existing-user">
+            <input type="submit" class="btn" value="Log In">
+        </form>
+
+        <!-- Admin block -->
+        <form action="admin">
+            <input type="submit" class="btn" value="Admin Panel">
+        </form>
+
+    
+    </div>
+</body>
+</html>
