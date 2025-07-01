@@ -1,0 +1,65 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(img4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered Background Box */
+.login-box {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Employee Name */
+.login-box h3 {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Title Styling */
+.login-box h1 {
+    font-size: 30px;
+    color: rgb(147, 15, 83);
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #3fbf67;
+    color: rgb(35, 103, 22);
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #58631d;
+    color: white;
+}

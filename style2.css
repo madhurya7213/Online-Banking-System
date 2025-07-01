@@ -1,0 +1,109 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: url(img2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.login-box {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: #333;
+  text-align: center;
+  /* Removed the transform transition and hover effect */
+}
+
+.login-box h1 {
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 4px solid #4a90e2;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.textbox {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  border-bottom: 2px solid #4a90e2;
+  transition: border-color 0.3s ease;
+}
+
+.textbox:hover,
+.textbox:focus-within {
+  border-color: #6191da;
+}
+
+.textbox i {
+  width: 30px;
+  float: left;
+  text-align: center;
+  color: #4a90e2;
+  line-height: 36px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.textbox:hover i,
+.textbox:focus-within i {
+  color: #6191da;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #2c3e50;
+  font-size: 18px;
+  width: calc(100% - 40px);
+  padding: 8px 0 8px 10px;
+  float: left;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.textbox input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(45deg, #4a90e2, #6191da);
+  border: none;
+  color: white;
+  padding: 12px 0;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(97, 145, 218, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #3b7dcc, #4f82c1);
+  box-shadow: 0 6px 20px rgba(51, 102, 204, 0.8);
+}

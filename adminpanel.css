@@ -1,0 +1,69 @@
+/* static/styles/admin_panel.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 40px;
+    color: #333;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+}
+
+thead th {
+    padding: 12px 20px;
+}
+
+tbody td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3498db;
+}
+
+br + a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+br + a:hover {
+    color: #34495e;
+}

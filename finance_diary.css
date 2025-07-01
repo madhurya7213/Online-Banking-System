@@ -1,0 +1,172 @@
+/* Overall body and container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+    margin: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Form container styling */
+form {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+form:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+input[type="date"],
+select,
+input[type="number"],
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+
+    /* Disable red underlines from browser spellcheck */
+    spellcheck: false;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+input[type="date"]:focus,
+select:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.6);
+    outline: none;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 14px 0;
+    width: 100%;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #5a3e94, #534bae);
+    box-shadow: 0 12px 25px rgba(83, 75, 174, 0.6);
+}
+
+/* Flash messages */
+.flash {
+    color: #2ecc71;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-shadow: 0 1px 2px rgba(46, 204, 113, 0.6);
+}
+
+/* Transactions list styling */
+hr {
+    margin: 40px 0 30px;
+    border: none;
+    border-top: 2px solid #eee;
+    width: 100%;
+    max-width: 520px;
+}
+
+.transaction-day {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 18px 28px;
+    max-width: 520px;
+    margin-bottom: 28px;
+    transition: transform 0.3s ease;
+}
+.transaction-day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.transaction-day h3 {
+    margin: 0 0 12px;
+    font-weight: 700;
+    color: #764ba2;
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+}
+
+.transaction-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.transaction-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.transaction-list li:last-child {
+    border-bottom: none;
+}
+
+.transaction-list li strong {
+    color: #333;
+    font-weight: 700;
+}
+
+/* Note text style aligned right */
+.transaction-list li span.note {
+    font-style: italic;
+    color: #888;
+    margin-left: 12px;
+    font-weight: 400;
+    max-width: 60%;
+    overflow-wrap: break-word;
+    text-align: right;
+    flex-shrink: 1;
+}
